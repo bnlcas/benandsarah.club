@@ -34,21 +34,56 @@
         opacity: 1;
         filter:alpha(opacity=100);
         font-family: 'Times New Roman', Times, serif;
-        text-align: left;
+        text-align: center;
         padding-top: 25px;
+      }
+
+      .nav-links{
+        height:30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        z-index:-1;
+        opacity: 1;
+        filter:alpha(opacity=100);
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        vertical-align: center;
+
+        padding-bottom: 25px;
+      } 
+
+      .nav-link{
+        margin: auto;
+        padding-left: 25px;
+        text-align: center;
+        vertical-align: center;
       }
 
       h1{
         font-family: "Alex Brush", cursive;
       }
 
+      h3{
+        color: black;
+        font-weight: normal;
+      }
       a {
         color: black;
         font-weight: normal;
         text-decoration: underline;
+        transition: 0.3s;
       }
       a:hover{
         color: gray;
+      }
+
+      hr{
+        margin: 0px;
+        padding: 0px;
       }
 
       #backgroundVideo{
@@ -62,7 +97,7 @@
         padding: 0px;
         overflow: hidden;
         z-index: -1;
-        opacity: 0.8;
+        opacity: 0.6;
       }
 
       video{
@@ -84,7 +119,7 @@
   </head>
   <body>
     <div id="backgroundVideo">
-      <video loop autoplay muted poster="./assets/botanical_cover.jpg">
+      <video loop autoplay muted playsinline="true" disablePictureInPicture="true" poster="./assets/botanical_cover.jpg">
         <source src="./assets/botanical_loop.mp4" type="video/mp4">
       </video>
     </div>
@@ -92,10 +127,22 @@
     <div id="backgroundImage">
     </div>-->
       <div class="main">
-        <h1>Ben Lucas and Sarah Kemp</h1>
+        <h1>Sarah Kemp and Ben Lucas</h1>
+        <hr>
         <h3>We are getting married!</p>
-        <h3>April 12th, 2025</h2>
-        <h3><a href="https://www.morrisarboretum.org">Morris Arboretum</a>, Philadelphia, PA</h3>
+        <h3>Saturday, April 12th, 2025</h2>
+        <h3><a href="https://www.morrisarboretum.org">Morris Arboretum</a>, Philadelphia, Pennsylvania</h3>
       </div>
+
+
+      <div class="nav-links">
+        <div class="nav-link">
+          <h3><a href="./info.html">Event Details</a></h3>
+        </div>
+        <div class="nav-link">
+          <h3><a href="mailto:rsvp@benandsarah.club">RSVP</a></h3>
+        </div>
+      </div>
+
   </body>
 </html>
