@@ -1,5 +1,8 @@
-body{
+:root {
     overscroll-behavior: none;
+}
+
+body{
     background-color: #f7f1dd;  
 }
 
@@ -69,7 +72,11 @@ body{
 
 h1{
     font-family: "Alex Brush", cursive;
-    font-size: 4.5rem;
+    font-size: 10.2rem;
+}
+
+@media only screen and (min-width: 380px) {
+    h1{ font-size: 4.8rem; }
 }
 
 @media only screen and (min-width: 500px) {
