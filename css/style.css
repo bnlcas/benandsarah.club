@@ -11,13 +11,14 @@ body{
 #backgroundImage:before {
     content: "";
     position: fixed;
+    display: block;
     z-index: -100;
     bottom: 0;
-    left: 0;
+    top: 0;
     background-image: url('../assets/Ben_and_Sarah.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom right;
+    background-position: center;
     opacity: 0.4;
     filter:alpha(opacity=40);
     height:100%;
