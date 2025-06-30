@@ -28,6 +28,28 @@ body{
     z-index: -100;
 }
 
+#backgroundImage2{z-index: 1;}
+
+#backgroundImage2:before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-image: url('../assets/wedding_photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    /*opacity: 0.5;*/
+    /*filter:alpha(opacity=40);*/
+    z-index: -100;
+}
+
 .main{
     height:500px;
     width:90vw;
